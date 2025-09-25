@@ -41,7 +41,7 @@ int main() {
   //Carta 1
         printf("----------\nInformações para a primeira carta\n----------\n");
         printf("Coloque a letra do estado (Entre A e H): \n");
-        scanf("%c", &estado1);
+        scanf(" %c", &estado1);
         printf("Coloque o código da cidade (número entre 01 e 04): \n");
         scanf("%s", &codigo1);
         printf("Coloque o nome da cidade: \n");
@@ -58,13 +58,13 @@ int main() {
         densidade_populacao1=((float) populacao1 / area1);
         pib_percapta1=((pib1 * 1000000000) / populacao1);
         // Alterações para nível mestre
-        superpoder1=(float) populacao1 + area1 + pib1 + pontos_turisticos1 + (1 / densidade_populacao1) + pib_percapta1;
+        superpoder1=(float) populacao1 + area1 + pib1 + pontos_turisticos1 + (1.0 / densidade_populacao1) + pib_percapta1;
         
 
   //Carta 2
         printf("----------\nInformações para a segunda carta\n----------\n");
         printf("Coloque a letra do estado (Entre A e H): \n");
-        scanf("%c", &estado2);
+        scanf(" %c", &estado2);
         printf("Coloque o código da cidade (número entre 01 e 04): \n");
         scanf("%s", &codigo2);
         printf("Coloque o nome da cidade: \n");
@@ -81,7 +81,7 @@ int main() {
         densidade_populacao2=((float) populacao2 / area2);
         pib_percapta2=((pib2 * 1000000000) / populacao2);
         // Alterações para nível mestre
-        superpoder2=(float) populacao2 + area2 + pib2 + pontos_turisticos2 + (1 / densidade_populacao2) + pib_percapta2;
+        superpoder2=(float) populacao2 + area2 + pib2 + pontos_turisticos2 + (1.0 / densidade_populacao2) + pib_percapta2;
         
 
 
@@ -102,7 +102,7 @@ int main() {
 
   //Carta 2                
         printf("----------\nSegunda Carta:\n----------\n");
-        printf("Estado: %s\n", estado2);
+        printf("Estado: %c\n", estado2);
         printf("Código: %c%s\n", estado2,codigo2);
         printf("Nome da cidade: %s\n", nome_cidade2);
         printf("População: %d\n", populacao2);
